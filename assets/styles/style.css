@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+:root {
+    --light:#f5f6fa;
+    --dark: #2f3640;
+    --grey: #7f8fa6;
+    --protos: #00a8ff;
+    --ntsc: #4b7bec;
+    --another-blue:#40739e;
+    --mazarine:#273c75;
+    --primary: #487eb0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color:var(--light);
+}
+
+body {
+    color: var(--dark);
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+header {
+    display: inline;
+}
+
+article {
+    margin: 4px 15px;
+}
+
+aside {
+    padding-left: 4px;
+    float: right;
+    width: 25%;
+}
+
+nav {
+    border-top: 1px solid var(--ntsc);
+    background-color: var(--another-blue);
+    position: sticky;
+    top: 0;
+    padding: 2px;
+}
+
+nav a {
+    font-size: 0.9em;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--protos);
+    font-weight: bold;
+    padding: 2px;
+    border-bottom: 2px solid var(--protos);
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Barlow Condensed', Helvetica, sans-serif;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.jumbotron {
+    font-size: 26px;
+    padding: 60px;
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.profile header {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+footer {
+    margin: 20px auto 0px;
+    padding: 20px;
+    color: white;
+    background-color: var(--primary);
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+}
